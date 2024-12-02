@@ -295,7 +295,7 @@
         <link rel="alternate" href="http://k1nakoo.github.io/DC-1%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
         <content type="html">&lt;p&gt;DC 靶场系列&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;DC1，开始逐渐打靶，加油加油&lt;/p&gt;
+&lt;p&gt;DC1&lt;/p&gt;
 &lt;h2 id=&#34;一-环境搭建&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#一-环境搭建&#34;&gt;#&lt;/a&gt; 一、环境搭建&lt;/h2&gt;
 &lt;h3 id=&#34;准备工具&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#准备工具&#34;&gt;#&lt;/a&gt; 准备工具&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;kali&lt;/strong&gt;&lt;/p&gt;
@@ -1014,7 +1014,7 @@ sqlmap -u &amp;quot;http://node5.anna.nssctf.cn:28399/?id=id%3D1&amp;quot; -D ct
 &lt;h2 id=&#34;原来你也玩原神-初级&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#原来你也玩原神-初级&#34;&gt;#&lt;/a&gt; ▸ 原来你也玩原神 (初级)&lt;/h2&gt;
 &lt;p&gt;呃呃，抽象编码&lt;/p&gt;
 &lt;p&gt;原神提瓦特文字&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://k1nako-images.netlify.app/images/QQ%E6%88%AA%E5%9B%BE20230513194919.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://media.githubusercontent.com/media/K1nakoo/picture/main/QQ%E6%88%AA%E5%9B%BE20230513194919.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;家人们谁懂啊rsa签到都不会-初级&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#家人们谁懂啊rsa签到都不会-初级&#34;&gt;#&lt;/a&gt; ▸ 家人们！谁懂啊，RSA 签到都不会 (初级)&lt;/h2&gt;
 &lt;p&gt;&lt;img data-src=&#34;http://k1nako-images.netlify.app/images/image-20230513195748358.png&#34; alt=&#34;image-20230513195748358&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;总之就是我也不会，工具梭出来的 hhh&lt;/p&gt;
@@ -1106,7 +1106,7 @@ SQL注入：启动一个“攻击者”将SQL语句注入到HTTP表单的输入�
 &lt;p&gt;Github 首页点击 new 新建仓库，注意必须是 Public 仓库，而且要加一个 README&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Initialize this repository with a README.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;3-创建-token&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3-创建-token&#34;&gt;#&lt;/a&gt; 3. 创建 Token&lt;/h1&gt;
 &lt;p&gt;去 github 创建&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL3NldHRpbmdzL3Rva2Vucy9uZXc=&#34;&gt; Token&lt;/span&gt;（点击这里前往）&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://k1nako-images.netlify.app/images/QQ%E6%88%AA%E5%9B%BE20230421001743.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://media.githubusercontent.com/media/K1nakoo/picture/main/QQ%E6%88%AA%E5%9B%BE20230421001743.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;创建完后会提示你 Token 创建成功，记得保存并复制下来&lt;/p&gt;
 &lt;h1 id=&#34;4-配置-picgo&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4-配置-picgo&#34;&gt;#&lt;/a&gt; 4. 配置 PicGo&lt;/h1&gt;
 &lt;p&gt;打开 PicGo ，找到图床 Github 设置&lt;/p&gt;
@@ -1143,23 +1143,23 @@ SQL注入：启动一个“攻击者”将SQL语句注入到HTTP表单的输入�
 &lt;p&gt;用 dirb 或 dirsearch 扫描目录工具扫&lt;/p&gt;
 &lt;p&gt;扫出 admin 后台，根据附件找到账号密码登陆到后台界面&lt;/p&gt;
 &lt;p&gt;找到添加栏目，实现目录遍历&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://k1nako-images.netlify.app/images/QQ%E6%88%AA%E5%9B%BE20230419181413.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://k1nako-images.netlify.app/images/QQ%E5%9B%BE%E7%89%8720230419181704.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://media.githubusercontent.com/media/K1nakoo/picture/main/QQ%E6%88%AA%E5%9B%BE20230419181413.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://media.githubusercontent.com/media/K1nakoo/picture/main/QQ%E5%9B%BE%E7%89%8720230419181704.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;然后去前端访问一遍这个栏目，即可获取 flag&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://k1nako-images.netlify.app/images/QQ%E6%88%AA%E5%9B%BE20230419181755.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://media.githubusercontent.com/media/K1nakoo/picture/main/QQ%E6%88%AA%E5%9B%BE20230419181755.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;h1 id=&#34;dreamer_revenge&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#dreamer_revenge&#34;&gt;#&lt;/a&gt; Dreamer_revenge&lt;/h1&gt;
 &lt;p&gt;跟上题一样，访问后台，上一题的 flag 已经被删。尝试其他路线&lt;/p&gt;
 &lt;p&gt;在附件中找到主题包文件，更改 theme.json，将目录改成根目录&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://k1nako-images.netlify.app/images/QQ%E6%88%AA%E5%9B%BE20230419182053.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://k1nako-images.netlify.app/images/QQ%E6%88%AA%E5%9B%BE20230419182141.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://media.githubusercontent.com/media/K1nakoo/picture/main/QQ%E6%88%AA%E5%9B%BE20230419182053.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://media.githubusercontent.com/media/K1nakoo/picture/main/QQ%E6%88%AA%E5%9B%BE20230419182141.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;然后再后台风格管理上，上传更改后的主题包&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://k1nako-images.netlify.app/images/QQ%E6%88%AA%E5%9B%BE20230419182005.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://media.githubusercontent.com/media/K1nakoo/picture/main/QQ%E6%88%AA%E5%9B%BE20230419182005.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;点击启用&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://k1nako-images.netlify.app/images/QQ%E6%88%AA%E5%9B%BE20230419182254.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://media.githubusercontent.com/media/K1nakoo/picture/main/QQ%E6%88%AA%E5%9B%BE20230419182254.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;然后再模板管理这里查看发现，目录已经成了根目录的位置，可以读取到所用文件的内容，也可进行修改&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://k1nako-images.netlify.app/images/QQ%E5%9B%BE%E7%89%8720230419182336.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://media.githubusercontent.com/media/K1nakoo/picture/main/QQ%E5%9B%BE%E7%89%8720230419182336.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;最后在 &lt;code&gt;/var/lib/redis/dump.rdb&lt;/code&gt;  的最底下找到 flag&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;https://k1nako-images.netlify.app/images/QQ%E6%88%AA%E5%9B%BE20230419182543.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://media.githubusercontent.com/media/K1nakoo/picture/main/QQ%E6%88%AA%E5%9B%BE20230419182543.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 </content>
         <category term="CTF Write Up" scheme="http://k1nakoo.github.io/categories/CTF-Write-Up/" />
         <category term="CTF" scheme="http://k1nakoo.github.io/tags/CTF/" />
